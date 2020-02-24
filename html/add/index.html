@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Thing to help with gambit stuff</title>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css" integrity="sha256-CDVQJfU+jJGU/oyDzvnzuGXbv0rz+SyBsPQwyn7x/jQ=" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                This is just a way to input the gambits.
+                <br/>
+                <textarea class="textarea" id="forParsing"></textarea>
+                <button class="button" id="parseButton">parse</button>
+            </div>
+
+
+        <div class="box">
+            <form method="post">
+                <div class="field is-horizontal">
+                    
+                    <div class="field-label">
+                        <label class="label" for="nameInput">Gambit Name</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control is-expanded">
+                                <input class="input" type="text" id="nameInput" name="name" placeholder="Gambit name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control is-expanded">
+                                <label class="checkbox">
+                                <input type="checkbox" id="experimentInput" name="experiment">
+                                Experiment
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label">
+                        <label class="label" for="levelInput">Gambit Level</label>
+                    </div>
+                    <div class="field-body">
+                        
+                        <div class="field control is-expanded">
+                            <input class="input" id="levelInput" name="level" type="text" placeholder="Gambit Level"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal"> 
+                    <div class="field-label">
+                        <label class="label" for="schoolInput">School</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field control is-expanded">
+                            <input class="input" id="schoolInput" name="school" type="text" placeholder="Gambit School"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field is-horizontal"> 
+                    <div class="field-label">
+                        <label class="label" for="targetInput">Target</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field control is-expanded">
+                            <input class="input" id="targetInput" name="target" type="text" placeholder="Gambit Target"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field is-horizontal"> 
+                    <div class="field-label">
+                        <label class="label" for="rangeInput">Range</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field control is-expanded">
+                            <input class="input" id="rangeInput" name="range" type="text" placeholder="Gambit Range"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field is-horizontal"> 
+                    <div class="field-label">
+                        <label class="label" for="timeInput">Pull Time</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field control is-expanded">
+                            <input class="input" id="timeInput" name="pull_time" type="text" placeholder="Gambit Pull Time"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal"> 
+                    <div class="field-label">
+                        <label class="label" for="componentsInput">Components</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field control is-expanded">
+                            <input class="input" id="componentsInput" name="components" type="text" placeholder="Gambit Components"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field is-horizontal"> 
+                    <div class="field-label">
+                        <label class="label" for="durationInput">Duration</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field control is-expanded">
+                            <input class="input" id="durationInput" name="duration" type="text" placeholder="Gambit Duration"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field is-horizontal"> 
+                    <div class="field-label">
+                        <label class="label" for="scaleInput">Scale</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field control is-expanded">
+                            <input class="input" id="scaleInput" name="scale" type="text" placeholder="Gambit Scale"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field is-horizontal">
+                    <div class="field-label">
+                        <label class="label" for="descriptionInput">Description</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field control is-expanded">
+                            <textarea class="textarea" id="descriptionInput" name="description" ></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="control">
+                        <input class="button is-primary" type="submit"/>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+
+        <script src="/hyper/js/main.js"></script>
+        </div>
+    </body>
+</html>

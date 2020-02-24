@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Gambits</title>
+        <script src="/hyper/js/list.js"></script>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css" />
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    </head>
+    <body>
+        <section class="hero container">
+            <div class="hero-body">
+                <div class="container">
+                <h1 class="title">
+                    Hyperlanes Gambits
+                </h1>
+                <h2 class="subtitle">
+                    Look at all those gambits
+                </h2>
+                </div>
+            </div>
+        </section>
+        <div class="section container">
+            <div class="select">
+                <select id="schoolSelect"> 
+                    <option value="all">All</option>
+                    <option value="arsenal">Arsenal</option>
+                    <option value="deception">Deception</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="influence">Influence</option>
+                    <option value="medical">Medical</option>
+                    <option value="splicing">Splicing</option>
+                    <option value="survival">Survival</option>
+                    <option value="tactics">Tactics</option>
+                    <option value="vehicles">Vehicles</option>
+                </select>
+            </div>
+            <button class="button" id="sortByLevel">Sort By Level</button>
+            <button class="button" id="sortBySchool">Sort By School</button>
+        </div>
+        <div  class="section container">
+            <!-- <div class="controls">
+                <button class="button" text="By Class">By Class</button>
+            </div> -->
+            <div id="gambit-list-container" class="columns is-multiline">
+
+            </div>
+        </div>
+    </body>
+</html>
